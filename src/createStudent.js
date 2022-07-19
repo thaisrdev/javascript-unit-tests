@@ -9,12 +9,16 @@
   Parâmetros:
     - Uma string;
   Comportamento:
-    const estudante = createStudent('Leandrão, o Lobo Solitário')
+    const estudante = createStudent()
 
     estudante.name // Retorna: 'Leandrão, o Lobo Solitário'
     estudante.feedback() // Retorna: 'Eita pessoa boa!'
 */
 
-const createStudent = () => {};
+function createStudent(name) {
+let funcao = () => 'Eita pessoa boa!';
+const estudante = { name, feedback: funcao };
+return estudante;
+}
 
 module.exports = createStudent;
