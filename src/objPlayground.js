@@ -51,7 +51,7 @@ const arrayGenerator = (type, object) => {
     return Object.values(object);
   } if (type.value === 'entries') {
     return Object.entries(object);
-  }
+  } // e se type não receber nenhum desses?
 };
 console.log(arrayGenerator('keys', { sum: 3, mult: 2, div: 0, sub: -1 })); // [ 'sum', 'mult', 'div', 'sub' ]
 console.log(arrayGenerator('values', { sum: 3, mult: 2, div: 0, sub: -1 })); // [ 3, 2, 0, -1 ]
