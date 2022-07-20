@@ -44,13 +44,13 @@ const calculator = (number1, number2) => {
 }
 console.log(calculator(3, 2)); // { sum: 3, mult: 2, div: 0, sub: -1 } PASSOU
 
-const arrayGenerator = (type, object) => {
-  if (type.value === 'keys') {
-    return Object.keys(object);
-  } if (type.value === 'values') {
-    return Object.values(object);
-  } if (type.value === 'entries') {
-    return Object.entries(object);
+const arrayGenerator = (tipo, objeto) => {
+  if (tipo.value === 'keys') {
+    return Object.keys(objeto); //preciso colocar a função antes de object?
+  } if (tipo.value === 'values') {
+    return Object.values(objeto);
+  } if (tipo.value === 'entries') {
+    return Object.entries(objeto);
   } // e se type não receber nenhum desses?
 };
 console.log(arrayGenerator('keys', { sum: 3, mult: 2, div: 0, sub: -1 })); // [ 'sum', 'mult', 'div', 'sub' ]
